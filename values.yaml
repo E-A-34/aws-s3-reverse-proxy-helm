@@ -8,6 +8,14 @@ image:
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
+env:
+  ALLOWED_SOURCE_SUBNET: 0.0.0.0/0
+  ALLOWED_ENDPOINT: my-s3-gw.example.com
+  AWS_CREDENTIALS: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx,yyyyyyyyyyyyyyyyyyyyyyyyy
+  UPSTREAM_ENDPOINT: my.s3.provider.domain
+  AWS_REGION: east-eu-1
+  VERBOSE: false
+  METRICS_LISTEN_ADDR: :9000
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -76,11 +84,11 @@ resources: {}
 livenessProbe:
   httpGet:
     path: /health
-    port: metrics
+    port: 9000
 readinessProbe:
   httpGet:
     path: /health
-    port: metrics
+    port: 9000
 
 autoscaling:
   enabled: false
