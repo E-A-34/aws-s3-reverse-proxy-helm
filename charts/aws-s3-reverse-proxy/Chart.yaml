@@ -1,0 +1,6 @@
+apiVersion: v2
+name: aws-s3-reverse-proxy
+description: Helm chart to deploy s3-reverse-proxy on kubernetes
+type: application
+version: 0.1.0
+appVersion: "1.16.0"

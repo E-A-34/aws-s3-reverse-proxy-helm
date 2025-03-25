@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  aws-s3-reverse-proxy:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-03-25T19:51:17.0551344+01:00"
+    description: Helm chart to deploy s3-reverse-proxy on kubernetes
+    digest: 77f6ebcd7fe3294e25a4d1287ecfa18e85778d3aa86fdd24683d436e97384240
+    name: aws-s3-reverse-proxy
+    type: application
+    urls:
+    - https://e-a-34.github.io/aws-s3-reverse-proxy-helm/aws-s3-reverse-proxy-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-03-25T19:51:17.0551264+01:00"
